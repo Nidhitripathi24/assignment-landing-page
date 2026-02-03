@@ -1,0 +1,45 @@
+.app {
+  min-height: 100vh;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Footer */
+.footer {
+  background: var(--color-neutral-900);
+  color: var(--color-neutral-200);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--color-neutral-300);
+  margin: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--color-neutral-200);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.footer-links a:hover {
+  color: var(--color-primary-light);
+}

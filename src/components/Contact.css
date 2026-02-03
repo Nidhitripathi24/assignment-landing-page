@@ -1,0 +1,110 @@
+.contact-section {
+    background: linear-gradient(135deg,
+            var(--color-primary-light) 0%,
+            var(--color-secondary-light) 100%);
+}
+
+.contact-header {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.contact-header h2 {
+    color: var(--color-neutral-900);
+}
+
+.contact-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-neutral-700);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.contact-info {
+    padding: var(--spacing-xl);
+}
+
+.contact-info h3 {
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-lg);
+}
+
+.info-item {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    align-items: flex-start;
+}
+
+.info-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.info-item strong {
+    display: block;
+    color: var(--color-neutral-900);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+}
+
+.info-item p {
+    color: var(--color-neutral-700);
+    margin-bottom: var(--spacing-xs);
+}
+
+.cta-box {
+    padding: var(--spacing-xl);
+    text-align: center;
+}
+
+.cta-box h3 {
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-box>p {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin: var(--spacing-xl) 0;
+}
+
+.insurance-note {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-700);
+}
+
+.insurance-note strong {
+    color: var(--color-neutral-900);
+}
+
+@media (max-width: 968px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .info-item {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}
